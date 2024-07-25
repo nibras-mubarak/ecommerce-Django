@@ -1,0 +1,15 @@
+.carousel-item img {
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+    height: 60vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.he {
+    color: green;
+
+}

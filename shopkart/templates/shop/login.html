@@ -1,0 +1,23 @@
+{% extends 'shop\layouts\main.html' %}
+{% block content %}
+<div class="container my-3">
+  <div class="row">
+    <div class="col-12">
+      <h4 class="mb-4">Login</h4>
+      <hr>
+      {%include 'shop/inc/message.html'%}
+      <form method="post" action="">
+        {% csrf_token %}
+        <div class="mb-4 col-6">
+          Username<input type="text" name="username" id="username" class="form-control" placeholder="Enter Username">
+        </div>
+        <div class="mb-4 col-6">
+          password<input type="text" name="password" id="password" class="form-control" placeholder="Enter password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
